@@ -26,7 +26,7 @@
 //         console.log(data);
 //     });
 
-var newHTML;
+//var newHTML;
 
 fetch('https://gtlng.github.io/mvheustreu/js/htmlcomponents/footer.html').then(function (response) {
    
@@ -36,7 +36,8 @@ fetch('https://gtlng.github.io/mvheustreu/js/htmlcomponents/footer.html').then(f
     
     // This is the HTML from our response as a text string
     // console.log(html);
-    newHTML = html;
+   document.getElementById("mv-footer").innerHTML = html;
+    //newHTML = html;
 }).catch(function (err) {
     // There was an error
     console.warn('Something went wrong.', err);
@@ -44,11 +45,12 @@ fetch('https://gtlng.github.io/mvheustreu/js/htmlcomponents/footer.html').then(f
 
 console.log(newHTML);
 
-class Footer extends HTMLElement {
-    connectedCallback() {
-        this.innerHTML = newHTML;
-    }
-}
+//class Footer extends HTMLElement {
+//    connectedCallback() {
+//        this.innerHTML = newHTML;
+//    }
+//}
 
-customElements.define('mv-footer', Footer);
+//customElements.define('mv-footer', Footer);
+
 
