@@ -18,7 +18,7 @@ class Footer extends HTMLElement {
 
 customElements.define('mv-footer', Footer);
 
-fetch('htmlcomponents/footer.html')
+fetch('https://gtlng.github.io/mvheustreu/js/htmlcomponents/footer.html')
     .then((response) => {
         return response.json();
     })
@@ -27,7 +27,7 @@ fetch('htmlcomponents/footer.html')
     });
 
 
-fetch('js/htmlcomponents/footer.html').then(function (response) {
+fetch('https://gtlng.github.io/mvheustreu/js/htmlcomponents/footer.html').then(function (response) {
    
     // The API call was successful!
     return response.text();
