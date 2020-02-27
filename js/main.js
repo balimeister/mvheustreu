@@ -45,9 +45,7 @@ console.log(html);
 
 class Footer2 extends HTMLElement {
     connectedCallback() {
-        this.innerHTML = `<div class="footer l-box is-center">
-      View the source of this layout to learn more. Made with love by the YUI Team.
-  </div>`;
+        this.innerHTML = newHTML;
     }
 }
 
