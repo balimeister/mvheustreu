@@ -71,8 +71,7 @@ fetch('https://gtlng.github.io/mvheustreu/js/htmlcomponents/header.html').then(f
 
 
 
-document.addEventListener("DOMContentLoaded", function (event,document) {
-    console.log("DOM fully loaded and parsed");
+document.addEventListener("DOMContentLoaded", function () {
         document.getElementById('toggle').addEventListener('click', function (e) {
             document.getElementById('tuckedMenu').classList.toggle('custom-menu-tucked');
             document.getElementById('toggle').classList.toggle('x');
