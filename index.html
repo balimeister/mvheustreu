@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A layout example that shows off a responsive product landing page.">
+    <title>MV Heustreu Pure &ndash; Layout Examples &ndash; Pure</title>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-"
+        crossorigin="anonymous">
+
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-old-ie-min.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-min.css">
+    <!--<![endif]-->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--[if lte IE 8]>
+            <link rel="stylesheet" href="css/layouts/marketing-old-ie.css">
+        <![endif]-->
+    <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="css/layouts/marketing.css">
+
+    <link rel="stylesheet" href="css/mv.css">
+
+    <link rel="stylesheet" href="css/slider_landing.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <script src="js/main.js"></script>
+    <!--<![endif]-->
+</head>
+
+<body>
+    <div class="header">
+        <div class="custom-menu-wrapper">
+            <div class="pure-menu custom-menu custom-menu-top">
+                <a href="#" class="pure-menu-heading custom-menu-brand">Musikverein Heustreu</a>
+                <a class="custom-menu-toggle" id="toggle"><s class="bar"></s><s class="bar"></s></a>
+            </div>
+            <div class="pure-menu pure-menu-horizontal pure-menu-scrollable custom-menu custom-menu-bottom custom-menu-tucked"
+                id="tuckedMenu">
+                <div class="custom-menu-screen"></div>
+                <ul class="pure-menu-list">
+                    <li class="pure-menu-item pure-menu-selected"><a href="#" class="pure-menu-link">Startseite</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Über uns</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Aktuelles</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Termine</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Besetzungen</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Ausbildung</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+        <script>
+            (function (window, document) {
+                document.getElementById('toggle').addEventListener('click', function (e) {
+                    document.getElementById('tuckedMenu').classList.toggle('custom-menu-tucked');
+                    document.getElementById('toggle').classList.toggle('x');
+                });
+            })(this, this.document);
+        </script>
+        <style>
+            .main {
+                padding: 0em;
+                color: black;
+            }
+        </style>
+
+
+
+    </div>
+
+    <!-- <div class="splash-container"> -->
+    <ul class="cb-slideshow">
+        <li>
+            <span>Image 01</span>
+            <div>
+                <h3>Musik&shy;verein Heustreu</h3>
+            </div>
+        </li>
+        <li> <span>Image 02</span>
+            <div>
+                <h3>Spaß</h3>
+            </div>
+        </li>
+        <li> <span>Image 03</span>
+            <div>
+                <h3>Gemein&shy;schaft</h3>
+            </div>
+        </li>
+        <li> <span>Image 04</span>
+            <div>
+                <h3>Unter&shy;haltung</h3>
+            </div>
+        </li>
+        <li> <span>Image 05</span>
+            <div>
+                <h3>Lernen</h3>
+            </div>
+        </li>
+        <li> <span>Image 06</span>
+            <div>
+                <h3>Erleb&shy;nisse</h3>
+            </div>
+        </li>
+    </ul>
+    <!-- </div> -->
+
+    <div class="content-wrapper">
+        <div class="content">
+            <h2 class="content-head is-center">Bei uns ist Musik drin</h2>
+
+            <div class="pure-g">
+                <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+
+                    <h3 class="content-subhead">
+                        <i class="fa fa-home"></i>
+                        Über uns
+                    </h3>
+                    <p>
+                        Der Musik- und Heimatverein Heustreu wurde 1970 gegründet und bereichert seitdem das Heustreuer
+                        Dorfleben bei vielen Gelegenheiten und mit zahlreichen jährlichen Veranstaltungen. Darüber
+                        hinaus sind wir auch regelmäßig jenseits der Ortsgrenzen aktiv. Wir pflegen sogar gute Kontakte
+                        in die USA.
+                    </p>
+                </div>
+                <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+                    <h3 class="content-subhead">
+                        <i class="fa fa-music"></i>
+                        Besetzungen
+                    </h3>
+                    <p>
+                        Unser Musikverein verfügt über mehrere, sehr unterschiedliche Besetzungen und bietet so für
+                        beinahe alle Altersgruppen und jeden Musikgeschmack eine passende Gruppierung.</br>
+                        Im Vordergrund steht bei allen Bands die Spielfreude und das gemeinsame Streben nach
+                        Verbesserung.
+
+
+                    </p>
+                </div>
+                <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+                    <h3 class="content-subhead">
+                        <i class="fa fa-graduation-cap"></i>
+                        Ausbildung
+                    </h3>
+                    <p>
+                        Wir legen viel Wert auf eine fundierte Ausbildung unserer Nachwuchsmusiker. Für den
+                        grundlegenden Instrumentalunterricht kooperieren wir mit der Kreismusikschule. Daneben bietet
+                        der Verein Theorieunterricht und praktisches Musizieren, um die Kinder möglichst früh zusätzlich
+                        zu fördern.
+                    </p>
+                </div>
+                <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+                    <h3 class="content-subhead">
+                        <i class="fa fa-check-square-o"></i>
+                        Sei dabei!
+                    </h3>
+                    <p>
+                        Egal ob jung oder alt, ob Anfänger oder Profi, wir freuen uns immer über motivierte Verstärkung!
+                        Wenn du Interesse hast ein Instrument zu erlernen oder in einer unserer Gruppierungen
+                        mitzuspielen, dann melde dich und komme zu einer unser zahlreichen Proben vorbei.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="ribbon l-box-lrg pure-g">
+            <div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
+                <img width="300" alt="File Icons" class="pure-img-responsive"
+                    src="img/Musikfest_Gabolshausen_2016_1.jpg">
+            </div>
+            <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
+
+                <h2 class="content-head content-head-ribbon">Kreismusikfest 2020</h2>
+
+                <p>
+                    Das Weihnachtskonzert muss in diesem Jahr leider ausfallen, wegen der Bauarbeiten am künftigen
+                    Gemeidezentrum. Wir hoffen Sie im Dezember 2020 wieder begrüßen zu dürfen.
+                </p>
+            </div>
+        </div>
+
+        <div class="content">
+            <h2 class="content-head is-center">Dolore magna aliqua. Uis aute irure.</h2>
+
+            <div class="pure-g">
+                <div class="l-box-lrg pure-u-1 pure-u-md-2-5">
+                    <form class="pure-form pure-form-stacked">
+                        <fieldset>
+
+                            <label for="name">Your Name</label>
+                            <input id="name" type="text" placeholder="Your Name">
+
+
+                            <label for="email">Your Email</label>
+                            <input id="email" type="email" placeholder="Your Email">
+
+                            <label for="password">Your Password</label>
+                            <input id="password" type="password" placeholder="Your Password">
+
+                            <button type="submit" class="pure-button">Sign Up</button>
+                        </fieldset>
+                    </form>
+                </div>
+
+                <div class="l-box-lrg pure-u-1 pure-u-md-3-5">
+                    <h4>Contact Us</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.
+                    </p>
+
+                    <h4>More Information</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <mv-footer></mv-footer>
+
+        <!-- <div class="footer l-box is-center">
+            View the source of this layout to learn more. Made with love by the YUI Team.
+        </div> -->
+
+    </div>
+
+
+
+</body>
+
+</html>
