@@ -64,14 +64,14 @@ fetch('https://gtlng.github.io/mvheustreu/js/htmlcomponents/header.html').then(f
     // console.log(html);
     document.getElementById("header").innerHTML = html;
     //newHTML = html;
-    }).catch(function (err) {
+}).catch(function (err) {
     // There was an error
     console.warn('Something went wrong.', err);
 });
 
 
 
-  document.addEventListener("DOMContentLoaded", function(event) {
+document.addEventListener("DOMContentLoaded", function (event) {
     console.log("DOM fully loaded and parsed");
     (function (window, document) {
         document.getElementById('toggle').addEventListener('click', function (e) {
@@ -79,4 +79,4 @@ fetch('https://gtlng.github.io/mvheustreu/js/htmlcomponents/header.html').then(f
             document.getElementById('toggle').classList.toggle('x');
         });
     })(this, this.document);
-  });
+});
