@@ -29,21 +29,21 @@
 //var newHTML;
 
 fetch('https://gtlng.github.io/mvheustreu/js/htmlcomponents/footer.html').then(function (response) {
-   
+
     // The API call was successful!
     return response.text();
 }).then(function (html) {
-    
+
     // This is the HTML from our response as a text string
     // console.log(html);
-   document.getElementById("mv-footer").innerHTML = html;
+    document.getElementById("mv-footer").innerHTML = html;
     //newHTML = html;
 }).catch(function (err) {
     // There was an error
     console.warn('Something went wrong.', err);
 });
 
-console.log(newHTML);
+// console.log(newHTML);
 
 //class Footer extends HTMLElement {
 //    connectedCallback() {
@@ -54,3 +54,29 @@ console.log(newHTML);
 //customElements.define('mv-footer', Footer);
 
 
+fetch('https://gtlng.github.io/mvheustreu/js/htmlcomponents/header.html').then(function (response) {
+
+    // The API call was successful!
+    return response.text();
+}).then(function (html) {
+
+    // This is the HTML from our response as a text string
+    // console.log(html);
+    document.getElementById("header").innerHTML = html;
+    //newHTML = html;
+}).catch(function (err) {
+    // There was an error
+    console.warn('Something went wrong.', err);
+});
+
+
+
+document.addEventListener("DOMContentLoaded", function (event) {
+    console.log("DOM fully loaded and parsed");
+    (function (window, document) {
+        document.getElementById('toggle').addEventListener('click', function (e) {
+            document.getElementById('tuckedMenu').classList.toggle('custom-menu-tucked');
+            document.getElementById('toggle').classList.toggle('x');
+        });
+    })(this, this.document);
+});
