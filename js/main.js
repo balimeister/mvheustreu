@@ -18,14 +18,14 @@ class Footer extends HTMLElement {
 
 customElements.define('mv-footer', Footer);
 
-fetch('https://gtlng.github.io/mvheustreu/js/htmlcomponents/footer.html')
-    .then((response) => {
-        return response.json();
-    })
-    .then((data) => {
-        console.log(data);
-    });
-
+// fetch('https://gtlng.github.io/mvheustreu/js/htmlcomponents/footer.html')
+//     .then((response) => {
+//         return response.json();
+//     })
+//     .then((data) => {
+//         console.log(data);
+//     });
+var newHTML;
 
 fetch('https://gtlng.github.io/mvheustreu/js/htmlcomponents/footer.html').then(function (response) {
    
@@ -34,12 +34,14 @@ fetch('https://gtlng.github.io/mvheustreu/js/htmlcomponents/footer.html').then(f
 }).then(function (html) {
     
     // This is the HTML from our response as a text string
-    console.log(html);
+    // console.log(html);
+    newHTML = html;
 }).catch(function (err) {
     // There was an error
     console.warn('Something went wrong.', err);
 });
 
+console.log(html);
 
 class Footer2 extends HTMLElement {
     connectedCallback() {
@@ -49,5 +51,5 @@ class Footer2 extends HTMLElement {
     }
 }
 
-customElements.define('mv-footer2', Footer);
+customElements.define('mv-footer2', Footer2);
 
